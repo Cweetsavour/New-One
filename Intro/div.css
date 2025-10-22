@@ -1,0 +1,214 @@
+p {
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.test-div1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-right: 15px;
+}
+.test-div2 {
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+.test-img1 {
+  width: 200px;
+  margin-bottom: 8px;
+}
+.test-p1 {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-left: 8px;
+}
+.test-img2 {
+  width: 28px;
+  border-radius: 14px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.test-p2 {
+  font-size: 11px;
+  vertical-align: middle;
+  color: rgb(100, 100, 100);
+}
+.test-button {
+  border: none;
+  width: 110px;
+  color: white;
+  background-color: rgb(170, 101, 235);
+  margin-left: 8px;
+  margin-bottom: 10px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.div-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  column-gap: 20px;
+}
+
+.home-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.notifications-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.messages-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.flex-div {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.551);
+  border-radius: 4px;
+  width: 315px;
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 140px;
+  font-size: 20px;
+}
+.button-14,
+.button-3,
+.button-5 {
+  border: none;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(89, 89, 226);
+  border-radius: 13px;
+}
+.button-14 {
+  width: 45px;
+}
+.button-3 {
+  width: 35px;
+}
+.button-5 {
+  width: 35px;
+}
+
+.first-flex,
+.second-flex,
+.third-flex {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+}
+.p-div1,
+.p-div2,
+.p-div3 {
+  margin-left: 15px;
+  line-height: 25px;
+}
+.division-1,
+.division-2,
+.division-3 {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  flex-direction: row;
+}
+.oliver-1,
+.mimi-1,
+.rex-1 {
+  font-weight: bold;
+}
+.cat-1,
+.popular-1,
+.cat-2,
+.popular-2,
+.bulldog-1,
+.popular-3 {
+  color: rgba(0, 0, 0, 0.545);
+}
+.image-1,
+.image-2,
+.image-3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.follow-1,
+.follow-2,
+.follow-3 {
+  height: 35px;
+  width: 80px;
+  font-size: 18px;
+  background-color: rgb(170, 101, 235);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+.padding-div {
+  padding-top: 15px;
+}
+
+.last-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 55px;
+  width: 900px;
+  background-color: rgb(118, 118, 203);
+}
+.center-me {
+  justify-items: center;
+}
+.left-section { 
+  padding-left: 10px;
+  align-items: center;
+  display: flex;
+}
+.middle-section {
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  margin-left: 75px;
+}
+.right-section {
+  padding-right: 10px;
+  align-items: center;
+  display: flex;
+}
+.h-button {
+  width: 50px;
+  color: rgba(255, 255, 255, 0.919);
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.search-bar {
+  width: 500px;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 20px;
+  border: none;
+}
+.d-button {
+  width: 110px;
+  margin-left: 77px;
+  height: 35px;
+  font-size: 16px;
+  background: none;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  color: rgba(255, 255, 255, 0.919);
+  border-color: rgba(255, 255, 255, 0.919);
+}

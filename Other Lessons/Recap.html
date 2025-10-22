@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
+  </head>
+  <body>
+    <div class="content">This is a content</div>
+
+    <ul class="people"></ul>
+    <script>
+      const numberArray = [4, 5, 6, 19, 24];
+      let largestNumber = numberArray[0];
+      for (i = 1; i < numberArray.length; i++) {
+        if (numberArray[i] > largestNumber) {
+          largestNumber = numberArray[i];
+        }
+      }
+      console.log(largestNumber);
+
+      let vowelString = "important";
+      let vowels = "a, e, i, o, u";
+      let count = 0;
+      for (let char of vowelString.toLowerCase()) {
+        if (vowels.includes(char)) {
+          count++;
+        }
+      }
+
+      console.log(count);
+
+      let text = "Checking possibilities";
+      let vowels2 = "aeiouAEIOU";
+      let displayVowels = " ";
+
+      for (let char of text) {
+        if (vowels.includes(char)) {
+          displayVowels += char;
+        }
+      }
+      console.log(displayVowels);
+
+      // let word = "JavaScript";
+      // let display = word.match(/[aeiou]/gi).join(" ");
+
+      let word = "JavaScript";
+      let vowels1 = "a, e, i, o, u";
+      product = " ";
+
+      for (let char of word.toLowerCase()) {
+        if (word.includes(char)) {
+          product += char;
+        }
+      }
+      console.log(product);
+      o;
+      console.log(display);
+
+      // Practice Arrow Functions
+      // const greet = function () {
+      //   return "Hello, world";
+      // };
+
+      const greet = () => "Hello, world";
+      const result = greet();
+      console.log(result);
+
+      // const bill = function (products, tax) {
+      //   let total = 0;
+      //   for (let i = 0; i < products.length; i++) {
+      //     total += products[i] + products[i] * tax;
+      //   }
+      //   return total;
+      // };
+
+      const bill = (products, tax) => {
+        let total = 0;
+        for (i = 0; i < products.length; i++) {
+          total += products[i] + products[i] * tax;
+        }
+        return total;
+      };
+      console.log(bill([10, 15, 30], 0.2));
+
+      // functions
+      const name = "Shaun";
+      let greet2 = () => "hello";
+      const resultOne = greet2();
+      console.log(resultOne);
+
+      // methods
+      const resultTwo = name.toUpperCase();
+      console.log(resultTwo);
+
+      // callbacks and foreach
+      const people = ["Mario", "Ryu", "Chun-li", "Shaun", "Luigi"];
+
+      const logPeople = (person, index) => {
+        console.log(`${index}: Hello, ${person}`);
+      };
+
+      people.forEach(logPeople);
+
+      // Get a reference to the ul
+      const ul = document.querySelector(".people");
+
+      const people2 = ["Mario", "Ryu", "Chun-li", "Shaun", "Luigi"];
+
+      let html = ``;
+
+      const browsePeople = (person) => {
+        html += `<li style="color: red">${person}</li>`;
+      };
+      people2.forEach(browsePeople);
+
+      console.log(html);
+      ul.innerHTML = html;
+    </script>
+  </body>
+</html>

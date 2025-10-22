@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Practice</title>
+  </head>
+
+  <body style="padding-bottom: 3000px">
+    <div
+      style="
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+      "
+    >
+      <div style="display: flex; flex-direction: column">
+        <div style="display: inline-block">
+          <div style="background-color: lightblue; height: 200px; width: 100%">
+            <img
+              style="display: grid; grid-template-columns: 1fr"
+              src="Intro/pics/channel-1.jpeg"
+            />1fr
+          </div>
+          <div style="background-color: lightpink; height: 200px">1fr</div>
+          <div style="background-color: lightblue; height: 200px">1fr</div>
+          <div style="background-color: lightpink; height: 200px">1fr</div>
+          <div style="background-color: lightblue; height: 200px">1fr</div>
+          <div style="background-color: lightpink; height: 200px">1fr</div>
+          <div style="background-color: lightblue; height: 200px">1fr</div>
+          <div style="background-color: lightpink; height: 200px">1fr</div>
+          <div style="background-color: lightblue; height: 200px">1fr</div>
+          <div style="background-color: lightpink; height: 200px">1fr</div>
+          <div style="background-color: lightblue; height: 200px">1fr</div>
+          <div style="background-color: lightpink; height: 200px">1fr</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+      "
+    >
+      <div style="background-color: lightpink">New Line2</div>
+      <div style="background-color: lightblue">New Line1</div>
+      <div style="background-color: lightblue; width: 100%">New Line3</div>
+    </div>
+    <br /><br /><br /><br />
+    <div style="position: relative; display: inline-block; left: 35%">
+      <img style="width: 400px" src="intro/pics/clothing.webp" />
+      <div
+        style="
+          position: absolute;
+          background-color: black;
+          color: white;
+          font-family: Arial;
+          top: 30px;
+          right: 0px;
+          width: 75px;
+          padding-top: 8px;
+          padding-bottom: 5px;
+          padding-left: 12px;
+        "
+      >
+        <span style="font-size: 14px">20%</span>
+        OFF
+      </div>
+      <div
+        style="
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          height: 100px;
+          background-color: rgba(255, 255, 255, 0.749);
+        "
+      >
+        <button style="height: 30px; width: 100px">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>

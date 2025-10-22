@@ -1,0 +1,377 @@
+.subscribe-button {
+  background-color: rgb(240, 0, 0);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  vertical-align: top, bottom;
+}
+.divclass {
+  justify-items: center;
+}
+.special {
+  margin-right: 140px;
+}
+p {
+  text-align: center;
+}
+.join-button {
+  background-color: white;
+  border-color: rgb(6, 95, 212);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(6, 95, 212);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.15s, color 0.15s;
+  vertical-align: top, bottom;
+}
+.tweet-button {
+  background-color: rgb(29, 155, 240);
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  transition: box-shadow 0.15s;
+  vertical-align: top, bottom;
+}
+.uber-button {
+  background-color: black;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 125px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: opacity 0.15s;
+}
+.amazon-button {
+  background-color: rgb(255, 216, 20);
+  border: none;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 80px;
+  transition: background-color 0.15s;
+}
+.github {
+  background-color: rgb(46, 164, 79);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 80px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.bootstrap1 {
+  background-color: rgb(121, 82, 179);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.bootstrap2 {
+  background-color: white;
+  color: rgb(108, 117, 125);
+  border-color: rgb(108, 117, 125);
+  border-style: solid;
+  border-width: 1px;
+  height: 36px;
+  width: 105px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-right: 80px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.LinkedIn1 {
+  background-color: rgb(10, 102, 194);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 255px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: background-color 0.2s;
+}
+.LinkedIn2 {
+  background-color: white;
+  color: rgb(10, 102, 194);
+  border-color: rgb(10, 102, 194);
+  border-style: solid;
+  border-width: 1px;
+  height: 36px;
+  width: 90px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, border-width 0.15s;
+}
+.buy {
+  background-color: orange;
+  border: none;
+  height: 36px;
+  width: 180px;
+  border-radius: 18px;
+  font-size: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+.cart {
+  background-color: rgb(255, 216, 20);
+  border: none;
+  height: 36px;
+  width: 180px;
+  border-radius: 18px;
+  font-size: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+.price {
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+}
+.back {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+.n1 {
+  margin-left: 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(64, 13, 112);
+  font-family: "Times New Roman";
+}
+.n2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(64, 13, 112);
+  font-family: "Times New Roman";
+}
+.n3 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(64, 13, 112);
+  font-family: "Times New Roman";
+}
+.n4 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(64, 13, 112);
+  font-family: "Times New Roman";
+}
+.n5 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(64, 13, 112);
+  font-family: "Times New Roman";
+}
+.next {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  margin-left: 3px;
+}
+.stretch {
+  background-color: green;
+  color: white;
+  border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 80px;
+  cursor: pointer;
+  transition: font-size 0.5s, padding-top 0.5s, padding-bottom 0.5s,
+    padding-left 0.5s, padding-right 0.5s;
+  position: absolute;
+}
+.shadow {
+  background-color: green;
+  color: white;
+  border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.507);
+  position: absolute;
+}
+.one {
+  background-color: green;
+  color: white;
+  border: none;
+  height: 23px;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition: padding-left 0.5s, padding-right 0.15s;
+  position: absolute;
+}
+.two {
+  background-color: green;
+  color: white;
+  border: none;
+  height: 23px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition: padding-left 0.5s, padding-right 0.15s;
+  margin-left: 100px;
+  transform: translate(10px);
+  position: absolute;
+}
+.three {
+  background-color: green;
+  color: white;
+  border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition: padding-left 0.5s, padding-right 0.15s;
+  margin-left: 200px;
+  position: absolute;
+  transform: translate(20px);
+}
+.one:hover {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.two:hover {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.three:hover {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.shadow:active {
+  margin-top: 3px;
+  margin-left: 3px;
+  box-shadow: 0px 0px 3px rgb(255, 255, 255);
+}
+.stretch:hover {
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.subscribe-button:hover {
+  opacity: 0.3;
+}
+.subscribe-button:active {
+  opacity: 1;
+}
+.join-button:hover {
+  background-color: rgb(10, 102, 194);
+  color: white;
+}
+.join-button:active {
+  opacity: 0.7;
+}
+.tweet-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.tweet-button:active {
+  opacity: 0.8;
+}
+.uber-button:hover {
+  opacity: 0.6;
+}
+.amazon-button:hover {
+  background-color: rgb(143, 214, 2);
+}
+.github:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.199);
+}
+.bootstrap1:hover {
+  background-color: rgb(48, 48, 119);
+  color: white;
+}
+.bootstrap2:hover {
+  background-color: rgb(108, 117, 125);
+  color: white;
+}
+.LinkedIn1:hover {
+  background-color: rgb(46, 46, 114);
+}
+.LinkedIn2:hover {
+  background-color: rgb(255, 242, 242);
+  border-width: 2px;
+}
+.delivery {
+  font-size: 25px;
+}
+.cart:hover {
+  background-color: rgb(143, 214, 2);
+}
+.cart:active {
+  opacity: 0.4;
+}
+
+.buy:hover {
+  background-color: darkorange;
+}
+.buy:active {
+  opacity: 0.4;
+}
+.anchor {
+  font-size: 25px;
+}
+.anchor:hover {
+  color: darkred;
+}

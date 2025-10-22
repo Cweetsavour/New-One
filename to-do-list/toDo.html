@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple To-Do</title>
+    <style>
+      body {
+        font-family: system-ui, Arial;
+        padding: 24px;
+        max-width: 700px;
+        margin: auto;
+      }
+      form {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      input[type="text"] {
+        flex: 1;
+        padding: 8px;
+        font-size: 16px;
+      }
+      button {
+        padding: 8px 10px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 6px;
+        border-bottom: 1px solid #eee;
+      }
+      .task-left {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .done span {
+        text-decoration: line-through;
+        opacity: 0.6;
+      }
+      .btns button {
+        margin-left: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>My To-Do</h2>
+
+    <!-- Use a form so Enter works naturally -->
+    <form id="taskForm">
+      <input
+        id="taskInput"
+        type="text"
+        placeholder="Add a task and press Enter or click Add"
+        aria-label="Task description"
+      />
+      <button id="addTaskBtn" type="submit">Add</button>
+    </form>
+
+    <ul id="taskList"></ul>
+
+    <script>
+      // Grab elements
+      const form = document.getElementById("taskForm");
+      const taskInput = document.getElementById("taskInput");
+      const taskList = document.getElementById("taskList");
+
+      // Create + append a task to the UL
+      let addTask = () => {
+        const text = taskInput.value.trim(); // remove surrounding spaces
+        if (!text) return; // ignore empty entries
+
+        // Build elements
+        const li = document.createElement("li");
+
+        const left = document.createElement("div");
+        left.className = "task-left";
+
+        const span = document.createElement("span");
+        span.textContent = text; // textContent prevents XSS
+
+        const btns = document.createElement("div");
+        btns.className = "btns";
+
+        const doneBtn = document.createElement("button");
+        doneBtn.type = "button"; // avoid accidental form submit
+        doneBtn.className = "btn-done";
+        doneBtn.textContent = "Done";
+        doneBtn.setAttribute("aria-label", `Mark "${text}" done`);
+
+        const delBtn = document.createElement("button");
+        delBtn.type = "button";
+        delBtn.className = "btn-delete";
+        delBtn.textContent = "Delete";
+        delBtn.setAttribute("aria-label", `Delete "${text}"`);
+
+        // Compose DOM
+        left.appendChild(span);
+        btns.appendChild(doneBtn);
+        btns.appendChild(delBtn);
+        li.appendChild(left);
+        li.appendChild(btns);
+        taskList.appendChild(li);
+
+        // Reset input and focus for faster entry
+        taskInput.value = "";
+        taskInput.focus();
+      };
+
+      // Submit handler (Enter key or Add button)
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // stop form from reloading the page
+        addTask(); // add a task from current input
+      });
+
+      // Use event delegation: one listener for all done/delete clicks
+      taskList.addEventListener("click", (e) => {
+        const target = e.target;
+        // done button toggles a 'done' class on the LI
+        if (target.classList.contains("btn-done")) {
+          const li = target.closest("li");
+          if (!li) return;
+          li.classList.toggle("done");
+          return;
+        }
+
+        // delete button removes the LI
+        if (target.classList.contains("btn-delete")) {
+          const li = target.closest("li");
+          if (!li) return;
+          li.remove();
+          return;
+        }
+      });
+    </script>
+  </body>
+</html>
